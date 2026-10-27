@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301 301">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3f6a44;
+      }
+
+      .cls-2 {
+        fill: #a0cbcb;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M.5.5v300h300s0-300,0-300H.5ZM65.25,282.57H18.38V20.77h46.86v261.8ZM77.08,282.57h-9.35V20.77h9.35v261.8ZM88.91,282.57h-9.35V20.77h9.35v261.8ZM98.39,282.57h-7V20.77h7v261.8ZM109.77,282.57h-7V20.77h7v261.8ZM122.22,282.57h-7V20.77h7v261.8ZM133.96,282.57h-6.29V20.77h6.29v261.8ZM145.7,282.57h-6.29V20.77h6.29v261.8ZM157.96,282.57h-5.92V20.77h5.92v261.8ZM171.37,282.57h-5.92V20.77h5.92v261.8ZM183.99,282.57h-5.13V20.77h5.13v261.8ZM197.12,282.57h-4.31V20.77h4.31v261.8ZM209.67,282.57h-3.72V20.77h3.72v261.8ZM224.45,282.57h-3.64V20.77h3.64v261.8ZM236.12,282.57h-2.98V20.77h2.98v261.8ZM249.42,282.57h-1.94V20.77h1.94v261.8ZM261.94,282.57h-1.17V20.77h1.17v261.8ZM276.37,282.57h-1.17V20.77h1.17v261.8Z"/>
+  <rect class="cls-1" x="18.38" y="20.77" width="46.86" height="261.8"/>
+  <rect class="cls-1" x="67.73" y="20.77" width="9.35" height="261.8"/>
+  <rect class="cls-1" x="79.56" y="20.77" width="9.35" height="261.8"/>
+  <rect class="cls-1" x="91.39" y="20.77" width="7" height="261.8"/>
+  <rect class="cls-1" x="102.77" y="20.77" width="7" height="261.8"/>
+  <rect class="cls-1" x="115.22" y="20.77" width="7" height="261.8"/>
+  <rect class="cls-1" x="127.68" y="20.77" width="6.29" height="261.8"/>
+  <rect class="cls-1" x="139.42" y="20.77" width="6.29" height="261.8"/>
+  <rect class="cls-1" x="152.04" y="20.77" width="5.92" height="261.8"/>
+  <rect class="cls-1" x="165.45" y="20.77" width="5.92" height="261.8"/>
+  <rect class="cls-1" x="178.86" y="20.77" width="5.13" height="261.8"/>
+  <rect class="cls-1" x="192.81" y="20.77" width="4.31" height="261.8"/>
+  <rect class="cls-1" x="205.94" y="20.77" width="3.72" height="261.8"/>
+  <rect class="cls-1" x="220.82" y="20.77" width="3.64" height="261.8"/>
+  <rect class="cls-1" x="233.14" y="20.77" width="2.98" height="261.8"/>
+  <rect class="cls-1" x="247.47" y="20.77" width="1.94" height="261.8"/>
+  <rect class="cls-1" x="260.77" y="20.77" width="1.17" height="261.8"/>
+  <rect class="cls-1" x="275.19" y="20.77" width="1.17" height="261.8"/>
+</svg>
