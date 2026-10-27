@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>De una foto de celular a una decisión en segundos · DataFest</title>
+<meta name="description" content="En retail, una foto de la góndola alcanza para detectar quiebres, medir Share of Shelf y validar la ejecución. Sebastián Matías Alberti, Fractal, Cognitive y Loger. Caso presentado en DataFest.">
+<link rel="canonical" href="https://www.datafest.ar/ideas/retail-gondola/">
+<meta name="theme-color" content="#2A3D66">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DataFest">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://www.datafest.ar/ideas/retail-gondola/">
+<meta property="og:title" content="De una foto de celular a una decisión en segundos · DataFest">
+<meta property="og:description" content="En retail, una foto de la góndola alcanza para detectar quiebres, medir Share of Shelf y validar la ejecución. Sebastián Matías Alberti, Fractal, Cognitive y Loger. Caso presentado en DataFest.">
+<meta property="og:image" content="https://www.datafest.ar/assets/img/og-datafest.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg">
+<link rel="preload" href="../../assets/fonts/soap-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body data-root="../../">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<!-- ===== encabezado (igual en todas las páginas) ===== -->
+<header class="nav" id="nav">
+  <div class="shell nav-in">
+    <a href="../../" class="brand" aria-label="DataFest, inicio"><svg viewBox="103.8 124.5 392.5 52.8" role="img" aria-label="DataFest"><path d="M110.52,139.5c0-6.22-5.16-4.93-5.16-9.18,0-3.26,2.81-4.1,5.61-4.1,2.58,0,8.5.46,12.67.46,4.63,0,6.75-.15,11.61-.15,16.24,0,24.36,10.32,24.36,24.59,0,11-8.19,24.66-20.49,24.66-5.16,0-10.24-.38-15.48-.38-4.7,0-9.41.46-14.04.46-2.28,0-4.71-1.44-4.71-3.95,0-4.7,5.62-3.95,5.62-10.09v-22.31h0ZM141.33,151.56c0-8.8-2.73-16.01-12.07-16.01-1.67,0-1.82,1.44-1.9,4.4-.08,3.95-.23,9.71-.23,11.53,0,3.49.23,8.42.38,9.41.3,3.04.53,5.54,4.02,5.54,7.28,0,9.79-8.5,9.79-14.87h.01Z"/><path d="M204.22,162.87c0,5.6,5.11,4.97,5.11,9.32,0,3.15-4.83,3.71-7.99,3.71-9.18,0-8.48-4.41-10.79-4.41-2.94,0-4.62,4.41-15.2,4.41-7.85,0-12.61-5.53-12.61-13.45,0-11.35,9.04-13.66,19.68-14.22,3.43-.14,5.53-1.19,5.53-4.97,0-2.94-1.26-5.88-4.69-5.88-6.44,0-7.35,10.02-13.24,10.02-4.2,0-4.83-2.8-4.83-6.44,0-9.6,12.4-11.49,20.8-11.49,15.06,0,18.21,7.22,18.21,20.52v12.89h.02ZM188.32,159.86c0-3.43-1.12-5.32-3.78-5.32s-4.69,1.96-4.69,5.32,1.89,6.44,4.69,6.44,3.78-2.87,3.78-6.44Z"/><path d="M239.59,162.87c0,5.67,5.11,4.97,5.11,9.32,0,2.31-2.17,3.64-4.27,3.64-2.59,0-5.95-.21-8.62-.21s-5.88.21-8.48.21c-2.1,0-4.27-1.33-4.27-3.64,0-4.34,5.11-3.64,5.11-9.32v-14.36c0-5.67-.28-8.34-2.03-8.34-4.13,0-4.76,7.15-9.67,7.15-3.08,0-4.41-2.87-4.41-5.53,0-4.2,3.57-12.05,8.55-12.05s8.55.84,14.92.84,10.72-.84,15.55-.84,8.55,7.85,8.55,12.05c0,2.66-1.47,5.53-4.34,5.53-4.9,0-5.6-7.15-9.74-7.15-1.82,0-1.96,2.66-1.96,8.34v14.36Z"/><path d="M299.83,162.87c0,5.6,5.11,4.97,5.11,9.32,0,3.15-4.83,3.71-7.99,3.71-9.18,0-8.48-4.41-10.79-4.41-2.94,0-4.62,4.41-15.2,4.41-7.85,0-12.61-5.53-12.61-13.45,0-11.35,9.04-13.66,19.68-14.22,3.43-.14,5.53-1.19,5.53-4.97,0-2.94-1.26-5.88-4.69-5.88-6.44,0-7.35,10.02-13.24,10.02-4.2,0-4.83-2.8-4.83-6.44,0-9.6,12.4-11.49,20.8-11.49,15.06,0,18.21,7.22,18.21,20.52v12.89h.02ZM283.93,159.86c0-3.43-1.12-5.32-3.78-5.32s-4.69,1.96-4.69,5.32,1.89,6.44,4.69,6.44,3.78-2.87,3.78-6.44Z"/><path d="M330.66,161.81c0,6.15,5.62,5.39,5.62,10.09,0,2.5-2.35,3.95-4.78,3.95-2.81,0-6.07-.23-8.95-.23s-6.37.23-9.26.23c-2.28,0-4.71-1.44-4.71-3.95,0-4.7,5.62-3.95,5.62-10.09v-22.31c0-6.22-5.16-4.93-5.16-9.18,0-3.26,2.81-4.1,5.61-4.1,1.52,0,4.78.38,7.66.38,10.32,0,16.54-1.06,25.72-1.06,6,0,6.75,7.44,6.75,10.47,0,2.73-.61,5.24-3.41,5.24-5.16,0-4.63-6.6-13.43-6.6-4.63,0-6.75.61-6.75,3.79,0,5.69.15,7.44,2.88,7.44,4.1,0,2.43-5.62,6.3-5.62,4.93,0,4.93,7.13,4.93,11,0,3.34-.84,11.69-4.86,11.69-5.01,0-1.67-7.74-7.74-7.74-1.52,0-2.05,1.37-2.05,3.26v3.34h.01Z"/><path d="M380.79,175.9c-11.42,0-23.54-8.06-23.54-23.26,0-12.33,8.41-23.4,22.49-23.4,11.14,0,21.08,7,21.08,18.28,0,6.44-5.67,6.65-8.83,6.65-6.94,0-9.88-.63-12.96-.63-1.89,0-3.08.42-3.08,1.96,0,5.25,6.94,8.13,11.21,8.13,3.43,0,6.09-1.19,7.92-3.01,1.4-1.4,2.31-1.89,3.64-1.89,1.75,0,2.52,1.68,2.52,4.27,0,5.25-8.27,12.89-20.45,12.89h0ZM379.94,137.52c-2.87,0-4.76,3.92-4.76,6.16,0,3.43,1.61,4.55,4.76,4.55,3.85,0,4.76-1.12,4.76-4.69,0-2.1-1.82-6.02-4.76-6.02Z"/><path d="M426.1,176.11c-11,0-20.66-2.52-20.66-14.36,0-2.03,1.05-4.06,3.5-4.06,2.66,0,5.46,5.32,7.28,6.65,2.45,1.82,5.67,2.52,7.92,2.52,2.59,0,3.57-1.19,3.57-2.45,0-5.53-21.72-4.62-21.72-21.15,0-8.06,7.71-14.01,19.54-14.01,9.39,0,18.35,1.54,18.35,10.37,0,2.59-1.47,4.76-4.13,4.76-5.18,0-6.37-6.02-12.75-6.02-1.82,0-3.36.7-3.36,2.03,0,4.06,8.97,3.71,16.81,8.62,3.78,2.38,5.39,5.18,5.39,9.11,0,10.86-9.74,18-19.75,18h0Z"/><path d="M479.05,162.87c0,5.67,5.11,4.97,5.11,9.32,0,2.31-2.17,3.64-4.27,3.64-2.59,0-5.95-.21-8.62-.21s-5.88.21-8.48.21c-2.1,0-4.27-1.33-4.27-3.64,0-4.34,5.11-3.64,5.11-9.32v-14.36c0-5.67-.28-8.34-2.03-8.34-4.13,0-4.76,7.15-9.67,7.15-3.08,0-4.41-2.87-4.41-5.53,0-4.2,3.57-12.05,8.55-12.05s8.55.84,14.92.84,10.72-.84,15.55-.84,8.55,7.85,8.55,12.05c0,2.66-1.47,5.53-4.34,5.53-4.9,0-5.6-7.15-9.74-7.15-1.82,0-1.96,2.66-1.96,8.34v14.36h0Z"/></svg></a>
+    <nav class="nav-links" aria-label="Principal"><a href="../../ideas/" aria-current="true">Ideas</a><a href="../../eventos/">Encuentros</a><a href="../../tu-desafio/">Tu desafío</a><a href="../../comunidad/">Comunidad</a><a href="../../nosotros/">Nosotros</a></nav>
+    <a href="../../comunidad/#novedades" class="btn btn-ink btn-sm">Sumate</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+  <div class="drawer shell" id="drawer"><nav aria-label="Menú móvil"><a href="../../">Inicio</a><a href="../../ideas/" aria-current="true">Ideas</a><a href="../../eventos/">Encuentros</a><a href="../../tu-desafio/">Tu desafío</a><a href="../../comunidad/">Comunidad</a><a href="../../nosotros/">Nosotros</a><a href="../../comunidad/#novedades" class="btn btn-ink">Sumate a la comunidad</a></nav></div>
+</header>
+
+<main id="contenido">
+<section class="ch" style="--c:var(--verde)">
+  <div class="shell ch-in">
+    <div class="ch-copy">
+      <nav class="crumbs" aria-label="Ruta"><a href="../../">Inicio</a><span aria-hidden="true">/</span><a href="../../ideas/">Ideas</a><span aria-hidden="true">/</span><span>Caso real</span></nav>
+      <div class="ch-tags"><span class="tag"><i></i>Caso real</span><span class="tag">Retail y consumo</span><a class="tag" href="../../ideas/temas/#ia">IA aplicada</a></div>
+      <h1>De una foto de celular a una decisión en segundos</h1>
+      <p class="lead">En retail, una foto de la góndola alcanza para detectar quiebres, medir Share of Shelf y validar la ejecución.</p>
+      <div class="ch-who"><span class="avs big"><span class="av"><img src="../../assets/img/speakers/sebastian.jpg" alt="" loading="lazy"></span></span><div><b>Sebastián Matías Alberti</b><span>Fractal, Cognitive y Loger</span><span class="ch-acomp">Acompañó: Visión Fractal</span></div></div>
+    </div>
+    <div class="ch-art dark" aria-hidden="true"><img src="../../assets/img/formas/miscelaneas-datafest-03.svg" alt=""><span>30·09·2026</span></div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="shell reveal">
+    <div class="sec-head"><div><div class="kicker">Cómo lo resolvieron</div><h2>Del problema al impacto</h2></div>
+      <p class="flow-ex">Todas las charlas de DataFest siguen el mismo recorrido. Esto es lo que se contó en el escenario el <b>30 de septiembre</b>.</p></div>
+    <ol class="story"><li style="--c:var(--aqua)"><span class="st-n">01</span><small>Problema</small><p>Saber qué pasa en cada góndola: quiebres de stock y si la ejecución es la acordada.</p></li><li style="--c:var(--oliva)"><span class="st-n">02</span><small>Datos</small><p>Una foto de la góndola, sacada con el celular.</p></li><li style="--c:var(--durazno)"><span class="st-n">03</span><small>Decisión</small><p>Detectar quiebres, medir Share of Shelf y validar la ejecución a partir de la imagen.</p></li><li style="--c:var(--ciruela)"><span class="st-n">04</span><small>Impacto</small><p>Actuar en segundos, en el punto de venta.</p></li></ol>
+  </div>
+</section>
+
+<section class="on-cream" id="consulta">
+  <div class="shell reveal">
+    <div class="contact">
+      <div>
+        <div class="kicker">¿Te pasa lo mismo?</div>
+        <h2>¿Te enterás tarde de lo que pasa en el punto de venta?</h2>
+        <p class="lead">Contanos en qué está tu empresa. El equipo de DataFest lee cada consulta y te conecta con especialistas de la comunidad que ya resolvieron problemas parecidos.</p>
+        <ul class="ticks"><li>Sin costo y sin compromiso.</li><li>Te responde una persona, no un bot.</li><li>Tus datos no se comparten sin tu permiso.</li></ul>
+        <a class="arrow" href="../../tu-desafio/?tema=ia" style="margin-top:28px">¿No sabés por dónde empezar? Hacé el autodiagnóstico <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="formcard">
+        <img src="../../assets/img/formas/miscelaneas-datafest-03.svg" alt="" aria-hidden="true">
+        <h3>Hablemos de tu caso</h3>
+        <p class="fc-lead">Con un par de líneas alcanza para empezar.</p>
+        <form id="fCaso" novalidate data-kind="consulta-caso" data-ok="Gracias, {nombre}. Recibimos tu consulta y te escribimos a {correo}."><input type="hidden" name="caso" value="retail-gondola"><input type="hidden" name="tema" value="ia">
+          <div class="fgrid"><div class="f"><label for="fCaso-nombre">Nombre y apellido *</label><input id="fCaso-nombre" name="nombre" type="text" autocomplete="name" required><small>Completá tu nombre.</small></div><div class="f"><label for="fCaso-correo">Correo laboral *</label><input id="fCaso-correo" name="correo" type="email" autocomplete="email" placeholder="nombre@empresa.com" required><small>Ingresá un correo válido.</small></div><div class="f"><label for="fCaso-empresa">Empresa</label><input id="fCaso-empresa" name="empresa" type="text" autocomplete="organization"></div><div class="f"><label for="fCaso-cargo">Cargo</label><input id="fCaso-cargo" name="cargo" type="text" autocomplete="organization-title"></div><div class="f"><label for="fCaso-tamano">Tamaño de la empresa</label><select id="fCaso-tamano" name="tamano"><option value="">Seleccionar…</option><option>1 a 10 personas</option><option>11 a 50 personas</option><option>51 a 200 personas</option><option>201 a 1000 personas</option><option>Más de 1000 personas</option></select></div><div class="f"><label for="fCaso-urgencia">¿Para cuándo lo necesitás?</label><select id="fCaso-urgencia" name="urgencia"><option value="">Seleccionar…</option><option>Este trimestre</option><option>Este año</option><option>Estoy explorando</option></select></div><div class="f full"><label for="fCaso-mensaje">¿Qué te gustaría resolver? *</label><textarea id="fCaso-mensaje" name="mensaje" required></textarea><small>Escribí un mensaje.</small></div></div>
+          <label class="consent"><input type="checkbox" name="consentimiento" required> <span>Acepto que DataFest use mis datos para contactarme y enviarme novedades de la comunidad. Puedo darme de baja cuando quiera.</span></label>
+          <button class="btn btn-peach" type="submit">Quiero que me contacten</button>
+          <div class="form-msg" role="status" hidden></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shell reveal">
+    <div class="sec-head"><div><div class="kicker">Seguí leyendo</div><h2>Más ideas de la comunidad</h2></div>
+      <a class="arrow" href="../../ideas/">Ver todas <span aria-hidden="true">→</span></a></div>
+    <div class="cards"><a class="ccard" href="../../ideas/ceagro/" style="--c:var(--durazno)">
+        <div class="cc-art"><img src="../../assets/img/formas/miscelaneas-datafest-05.svg" alt=""><span>Caso real · Agro</span></div>
+        <div class="cc-body"><small>Automatización</small><h3>No hace falta ser “tecnológico” para controlar tu campo en tiempo real</h3>
+          <div class="cc-who"><span class="avs"><span class="av"><img src="../../assets/img/speakers/german.jpg" alt="" loading="lazy"></span></span><span><b>Germán Jacquet</b>Ceagro S.A.</span></div></div>
+      </a><a class="ccard" href="../../ideas/triunfo-seguros/" style="--c:var(--aqua)">
+        <div class="cc-art"><img src="../../assets/img/formas/miscelaneas-datafest-07.svg" alt=""><span>Caso real · Seguros</span></div>
+        <div class="cc-body"><small>Analítica moderna</small><h3>El camino de 70 millones de registros al celular de cada colaborador</h3>
+          <div class="cc-who"><span class="avs"><span class="av ini" aria-hidden="true">MG</span><span class="av ini" aria-hidden="true">EL</span></span><span><b>Marianela Gaia y Edith Luján</b>Triunfo Seguros</span></div></div>
+      </a><a class="ccard" href="../../ideas/diagnostico-maipu/" style="--c:var(--oliva)">
+        <div class="cc-art"><img src="../../assets/img/formas/miscelaneas-datafest-04.svg" alt=""><span>Caso real · Salud</span></div>
+        <div class="cc-body"><small>Datos y decisiones</small><h3>La IA no arregla un modelo de datos roto: lo amplifica</h3>
+          <div class="cc-who"><span class="avs"><span class="av"><img src="../../assets/img/speakers/facundo.jpg" alt="" loading="lazy"></span></span><span><b>Facundo Manuel Liñeira</b>Diagnóstico Maipú</span></div></div>
+      </a></div>
+  </div>
+</section>
+</main>
+
+<!-- ===== pie (igual en todas las páginas) ===== -->
+<footer>
+  <div class="shell">
+    <div class="ft-top">
+      <div><h2>Casos e ideas, directo a tu correo</h2><p class="ft-sub">Casos reales, aprendizajes y el aviso del próximo encuentro. Sin spam.</p></div>
+      <form class="nl" data-kind="newsletter" data-ok="Listo. Te vamos a escribir a {correo}." novalidate>
+        <div class="f"><label for="nl-mail">Tu correo</label><input id="nl-mail" name="correo" type="email" autocomplete="email" placeholder="nombre@empresa.com" required><small>Ingresá un correo válido.</small></div>
+        <button class="btn btn-peach" type="submit">Suscribirme</button>
+        <label class="consent"><input type="checkbox" name="consentimiento" required> <span>Acepto recibir novedades de DataFest. Me puedo dar de baja cuando quiera.</span></label>
+        <div class="form-msg" role="status" hidden></div>
+      </form>
+    </div>
+    <div class="ft-cols">
+      <div><small>DataFest</small><p>Donde los datos conectan personas, ideas y negocios. Una comunidad impulsada por WITDATA, Visión Fractal, ERA Business Technology y MACH Consulting.</p></div>
+      <div><small>Ideas</small><ul><li><a href="../../ideas/">Casos reales</a></li><li><a href="../../ideas/temas/">Temas</a></li><li><a href="../../ideas/informe/">Informe 2026</a></li><li><a href="../../tu-desafio/">Autodiagnóstico</a></li></ul></div>
+      <div><small>Comunidad</small><ul><li><a href="../../eventos/">Encuentros</a></li><li><a href="../../comunidad/#proponer-caso">Proponé un caso</a></li><li><a href="../../comunidad/#sponsors">Sponsors y sedes</a></li><li><a href="../../nosotros/">Nosotros</a></li></ul></div>
+      <div><small>Contacto</small><ul><li><a href="https://www.instagram.com/datafest.ar/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="https://www.linkedin.com/company/datafest-ar/" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a href="../../preguntas/">Preguntas frecuentes</a></li><li><a href="../../preguntas/#contacto">Escribinos</a></li></ul></div>
+    </div>
+    <div class="ft-mark"><svg viewBox="103.8 124.5 392.5 52.8" aria-hidden="true"><path d="M110.52,139.5c0-6.22-5.16-4.93-5.16-9.18,0-3.26,2.81-4.1,5.61-4.1,2.58,0,8.5.46,12.67.46,4.63,0,6.75-.15,11.61-.15,16.24,0,24.36,10.32,24.36,24.59,0,11-8.19,24.66-20.49,24.66-5.16,0-10.24-.38-15.48-.38-4.7,0-9.41.46-14.04.46-2.28,0-4.71-1.44-4.71-3.95,0-4.7,5.62-3.95,5.62-10.09v-22.31h0ZM141.33,151.56c0-8.8-2.73-16.01-12.07-16.01-1.67,0-1.82,1.44-1.9,4.4-.08,3.95-.23,9.71-.23,11.53,0,3.49.23,8.42.38,9.41.3,3.04.53,5.54,4.02,5.54,7.28,0,9.79-8.5,9.79-14.87h.01Z"/><path d="M204.22,162.87c0,5.6,5.11,4.97,5.11,9.32,0,3.15-4.83,3.71-7.99,3.71-9.18,0-8.48-4.41-10.79-4.41-2.94,0-4.62,4.41-15.2,4.41-7.85,0-12.61-5.53-12.61-13.45,0-11.35,9.04-13.66,19.68-14.22,3.43-.14,5.53-1.19,5.53-4.97,0-2.94-1.26-5.88-4.69-5.88-6.44,0-7.35,10.02-13.24,10.02-4.2,0-4.83-2.8-4.83-6.44,0-9.6,12.4-11.49,20.8-11.49,15.06,0,18.21,7.22,18.21,20.52v12.89h.02ZM188.32,159.86c0-3.43-1.12-5.32-3.78-5.32s-4.69,1.96-4.69,5.32,1.89,6.44,4.69,6.44,3.78-2.87,3.78-6.44Z"/><path d="M239.59,162.87c0,5.67,5.11,4.97,5.11,9.32,0,2.31-2.17,3.64-4.27,3.64-2.59,0-5.95-.21-8.62-.21s-5.88.21-8.48.21c-2.1,0-4.27-1.33-4.27-3.64,0-4.34,5.11-3.64,5.11-9.32v-14.36c0-5.67-.28-8.34-2.03-8.34-4.13,0-4.76,7.15-9.67,7.15-3.08,0-4.41-2.87-4.41-5.53,0-4.2,3.57-12.05,8.55-12.05s8.55.84,14.92.84,10.72-.84,15.55-.84,8.55,7.85,8.55,12.05c0,2.66-1.47,5.53-4.34,5.53-4.9,0-5.6-7.15-9.74-7.15-1.82,0-1.96,2.66-1.96,8.34v14.36Z"/><path d="M299.83,162.87c0,5.6,5.11,4.97,5.11,9.32,0,3.15-4.83,3.71-7.99,3.71-9.18,0-8.48-4.41-10.79-4.41-2.94,0-4.62,4.41-15.2,4.41-7.85,0-12.61-5.53-12.61-13.45,0-11.35,9.04-13.66,19.68-14.22,3.43-.14,5.53-1.19,5.53-4.97,0-2.94-1.26-5.88-4.69-5.88-6.44,0-7.35,10.02-13.24,10.02-4.2,0-4.83-2.8-4.83-6.44,0-9.6,12.4-11.49,20.8-11.49,15.06,0,18.21,7.22,18.21,20.52v12.89h.02ZM283.93,159.86c0-3.43-1.12-5.32-3.78-5.32s-4.69,1.96-4.69,5.32,1.89,6.44,4.69,6.44,3.78-2.87,3.78-6.44Z"/><path d="M330.66,161.81c0,6.15,5.62,5.39,5.62,10.09,0,2.5-2.35,3.95-4.78,3.95-2.81,0-6.07-.23-8.95-.23s-6.37.23-9.26.23c-2.28,0-4.71-1.44-4.71-3.95,0-4.7,5.62-3.95,5.62-10.09v-22.31c0-6.22-5.16-4.93-5.16-9.18,0-3.26,2.81-4.1,5.61-4.1,1.52,0,4.78.38,7.66.38,10.32,0,16.54-1.06,25.72-1.06,6,0,6.75,7.44,6.75,10.47,0,2.73-.61,5.24-3.41,5.24-5.16,0-4.63-6.6-13.43-6.6-4.63,0-6.75.61-6.75,3.79,0,5.69.15,7.44,2.88,7.44,4.1,0,2.43-5.62,6.3-5.62,4.93,0,4.93,7.13,4.93,11,0,3.34-.84,11.69-4.86,11.69-5.01,0-1.67-7.74-7.74-7.74-1.52,0-2.05,1.37-2.05,3.26v3.34h.01Z"/><path d="M380.79,175.9c-11.42,0-23.54-8.06-23.54-23.26,0-12.33,8.41-23.4,22.49-23.4,11.14,0,21.08,7,21.08,18.28,0,6.44-5.67,6.65-8.83,6.65-6.94,0-9.88-.63-12.96-.63-1.89,0-3.08.42-3.08,1.96,0,5.25,6.94,8.13,11.21,8.13,3.43,0,6.09-1.19,7.92-3.01,1.4-1.4,2.31-1.89,3.64-1.89,1.75,0,2.52,1.68,2.52,4.27,0,5.25-8.27,12.89-20.45,12.89h0ZM379.94,137.52c-2.87,0-4.76,3.92-4.76,6.16,0,3.43,1.61,4.55,4.76,4.55,3.85,0,4.76-1.12,4.76-4.69,0-2.1-1.82-6.02-4.76-6.02Z"/><path d="M426.1,176.11c-11,0-20.66-2.52-20.66-14.36,0-2.03,1.05-4.06,3.5-4.06,2.66,0,5.46,5.32,7.28,6.65,2.45,1.82,5.67,2.52,7.92,2.52,2.59,0,3.57-1.19,3.57-2.45,0-5.53-21.72-4.62-21.72-21.15,0-8.06,7.71-14.01,19.54-14.01,9.39,0,18.35,1.54,18.35,10.37,0,2.59-1.47,4.76-4.13,4.76-5.18,0-6.37-6.02-12.75-6.02-1.82,0-3.36.7-3.36,2.03,0,4.06,8.97,3.71,16.81,8.62,3.78,2.38,5.39,5.18,5.39,9.11,0,10.86-9.74,18-19.75,18h0Z"/><path d="M479.05,162.87c0,5.67,5.11,4.97,5.11,9.32,0,2.31-2.17,3.64-4.27,3.64-2.59,0-5.95-.21-8.62-.21s-5.88.21-8.48.21c-2.1,0-4.27-1.33-4.27-3.64,0-4.34,5.11-3.64,5.11-9.32v-14.36c0-5.67-.28-8.34-2.03-8.34-4.13,0-4.76,7.15-9.67,7.15-3.08,0-4.41-2.87-4.41-5.53,0-4.2,3.57-12.05,8.55-12.05s8.55.84,14.92.84,10.72-.84,15.55-.84,8.55,7.85,8.55,12.05c0,2.66-1.47,5.53-4.34,5.53-4.9,0-5.6-7.15-9.74-7.15-1.82,0-1.96,2.66-1.96,8.34v14.36h0Z"/></svg></div>
+    <div class="ft-legal"><span>© 2026 DataFest</span><span>Hecho en Buenos Aires</span></div>
+  </div>
+</footer>
+
+<script src="../../assets/js/eventos.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
