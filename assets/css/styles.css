@@ -135,23 +135,23 @@ h2{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1;max-width:18ch;}
 .jump a:hover{background:var(--marino);color:var(--crema);}
 
 /* 5. Footer -------------------------------------------------------------- */
-footer{background:var(--marino);color:var(--crema);padding-top:clamp(56px,8vw,100px);overflow:hidden;}
+footer{background:var(--marino);color:var(--crema);padding-top:clamp(36px,5vw,56px);overflow:hidden;}
 .ft-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px 48px;}
-.ft-top h2{font-size:clamp(2rem,5vw,3.4rem);max-width:16ch;}
+.ft-top h2{font-size:clamp(1.6rem,3.5vw,2.4rem);max-width:16ch;}
 .ft-sub{color:var(--cream-soft);margin-top:12px;max-width:44ch;}
 .nl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end;flex:0 1 520px;min-width:0;}
 .nl .consent,.nl .form-msg{grid-column:1/-1;margin:0;}
 @media(max-width:560px){.nl{grid-template-columns:1fr;}}
-.ft-cols{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:28px;margin-top:clamp(44px,6vw,72px);padding-top:28px;border-top:1px solid var(--cream-line);}
+.ft-cols{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:24px;margin-top:clamp(28px,4vw,40px);padding-top:24px;border-top:1px solid var(--cream-line);}
 @media(max-width:820px){.ft-cols{grid-template-columns:1fr 1fr;}.ft-cols > div:first-child{grid-column:1/-1;}}
 .ft-cols small{display:block;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--oliva);margin-bottom:12px;}
 .ft-cols p{color:var(--cream-soft);font-size:.92rem;max-width:36ch;}
 .ft-cols ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
 .ft-cols a{font-size:.95rem;}
 .ft-cols a:hover{color:var(--aqua);}
-.ft-mark{margin-top:clamp(40px,6vw,72px);color:var(--aqua);}
+.ft-mark{margin-top:clamp(24px,4vw,40px);color:var(--aqua);}
 .ft-mark svg{width:100%;height:auto;fill:currentColor;}
-.ft-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:22px 28px;font-size:.8rem;color:rgba(243,240,228,.58);}
+.ft-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:16px 20px;font-size:.8rem;color:rgba(243,240,228,.58);}
 
 /* 6. Inicio -------------------------------------------------------------- */
 .hero{padding-block:clamp(36px,6vw,72px) clamp(40px,6vw,64px);}
