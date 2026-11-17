@@ -26,23 +26,25 @@ window.DATAFEST = {
   },
 
   /* meses que muestra la línea de tiempo de la página Eventos */
-  lineaDeTiempo: { desde: "2026-09", hasta: "2027-06" },
+  lineaDeTiempo: { desde: "2026-09", hasta: "2027-03" },
 
+  /* El menú "Eventos" del encabezado se arma con esta lista:
+     primero los próximos, después los realizados. */
   eventos: [
     {
       estado: "proximo",
-      fecha: "2026-12",
-      titulo: "Cierre de año 2026",
-      etiqueta: "Cierre de año",
-      bajada: "Un encuentro chico, con mucho networking, para cerrar el año con la comunidad. Fecha y sede a confirmar.",
-      datos: ["Presencial", "Cupos reducidos", "CABA"],
-      url: null,
-      imagen: "assets/img/formas/miscelaneas-datafest-02.svg"
+      fecha: "2026-12-03",
+      titulo: "Webinar · IA para obtener datos donde no están accesibles",
+      etiqueta: "Webinar",
+      bajada: "Cinco casos de industria, agro, salud y servicios donde la inteligencia artificial convierte una foto, una planilla o una llamada en información para decidir.",
+      datos: ["Online", "12:00 a 13:00 h", "Sin costo"],
+      url: "eventos/webinar-diciembre-2026/",
+      imagen: "assets/img/formas/miscelaneas-datafest-03.svg"
     },
     {
       estado: "realizado",
       fecha: "2026-09-30",
-      titulo: "DataFest 2026 · Primer encuentro",
+      titulo: "Primer encuentro DataFest",
       etiqueta: "1er encuentro",
       bajada: "Una mañana de casos reales sobre agro, seguros, salud y retail, con networking y una charla especial sobre IA agéntica.",
       datos: ["Presencial", "25 de Mayo 471, CABA", "9:00 a 15:00 h"],
