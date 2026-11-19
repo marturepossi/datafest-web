@@ -8,7 +8,7 @@ Usa el mismo stack que la landing del primer encuentro: HTML, CSS y JavaScript, 
 
 El sitio cuenta qué es DataFest, muestra sus eventos y casos, y abre tres puertas al negocio: hablar con un especialista, contar un caso y ser sponsor. Todos los formularios llegan al mismo equipo, que después reparte los contactos.
 
-**Menú:** Eventos (desplegable) · Qué es DataFest · Casos · Organizadores · Sponsors + botón Participá.
+**Menú:** Eventos (desplegable) · Qué es DataFest · Casos · Organizadores y sponsors + botón Participá.
 
 ```
 /
@@ -19,8 +19,8 @@ El sitio cuenta qué es DataFest, muestra sus eventos y casos, y abre tres puert
 ├── que-es/                          La idea, para quién es, cómo es un evento, temas, valores e historia
 ├── casos/                           Casos del 30/09 y adelanto de los casos del webinar
 │   └── ceagro/, aseguradora/, diagnostico-maipu/, retail-gondola/, ia-agentica/
-├── organizadores/                   Las cuatro empresas y "Hablá con un especialista"
-├── sponsors/                        Audiencia, formas de participar por evento y pedido de propuesta
+├── organizadores/                   Organizadores y sponsors: las cuatro empresas, "Hablá con un especialista",
+│                                    quiénes nos acompañan, audiencia, formas de participar y pedido de propuesta
 ├── participa/                       Venir a un evento, contar un caso o ser sponsor
 ├── preguntas/                       Preguntas frecuentes y contacto
 ├── 404.html
@@ -48,13 +48,13 @@ Todos los formularios mandan un `POST` en JSON a `formEndpoint` (en `assets/js/e
 | `empresa_origen` | si la persona llegó con un link `?origen=nombre`, ese nombre (se recuerda durante la visita) |
 | `fecha` | fecha y hora del envío |
 | `caso`, `tema` | en las páginas de caso: qué caso estaba leyendo |
-| `evento` | en Sponsors: para qué evento pide la propuesta |
+| `evento` | en el pedido de sponsor: para qué evento es |
 
 | tipo | dónde está | prioridad |
 |---|---|---|
-| `especialista` | Organizadores | alta |
+| `especialista` | Organizadores y sponsors | alta |
 | `consulta-caso` | al final de cada caso | media |
-| `sponsor` | Sponsors (incluye el evento elegido) | media |
+| `sponsor` | Organizadores y sponsors (incluye el evento elegido) | media |
 | `proponer-caso` | Participá | media |
 | `novedades` | Participá | baja |
 | `newsletter` | pie de todas las páginas | baja |

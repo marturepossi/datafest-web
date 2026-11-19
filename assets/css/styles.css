@@ -837,3 +837,4 @@ section:not(.on-dark) .rules span::before{background:var(--verde);}
 section:not(.on-dark) .allies small{color:var(--ink-mute);}
 section:not(.on-dark) .ally{background:var(--white);border:1px solid var(--line);}
 .drawer .dr-ev .ev-all a{flex-direction:row;gap:6px;}
+.allies.first{margin-top:28px;}
