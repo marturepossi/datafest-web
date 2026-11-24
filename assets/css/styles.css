@@ -150,7 +150,7 @@ footer{background:var(--marino);color:var(--crema);padding-top:clamp(36px,5vw,56
 .ft-cols a{font-size:.95rem;}
 .ft-cols a:hover{color:var(--aqua);}
 .ft-mark{margin-top:clamp(24px,4vw,40px);color:var(--aqua);}
-.ft-mark svg{width:100%;height:auto;fill:currentColor;}
+.ft-mark svg{display:block;width:clamp(120px,14vw,180px);height:auto;fill:currentColor;}
 .ft-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:16px 20px;font-size:.8rem;color:rgba(243,240,228,.58);}
 
 /* 6. Inicio -------------------------------------------------------------- */
